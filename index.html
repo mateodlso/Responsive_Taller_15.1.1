@@ -5,19 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Miller Tribute</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container-lg mt-4">
-        <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar con menú hamburguesa -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="#">Mac Miller</a>
-            <div class="collapse navbar-collapse">
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Discografía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Biografía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Frases</a></li>
+                    
+                    <!-- Dropdown para canciones en pantallas MD o menores -->
+                    <li class="nav-item dropdown d-md-block d-lg-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownCanciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Canciones
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownCanciones">
+                            <a class="dropdown-item" href="#">Self Care</a>
+                            <a class="dropdown-item" href="#">Good News</a>
+                            <a class="dropdown-item" href="#">Blue World</a>
+                            <a class="dropdown-item" href="#">Weekend</a>
+                        </div>
+                    </li>
                 </ul>
-                <form class="form-inline">
+                <!-- Input de búsqueda, solo visible en pantallas LG o mayores -->
+                <form class="form-inline d-none d-lg-block">
                     <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
                 </form>
             </div>
@@ -25,7 +45,7 @@
 
         <!-- Main Content -->
         <div class="row mt-4">
-            <div class="col-md-3">
+            <div class="col-lg-3 d-none d-lg-block">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action">Self Care</a>
                     <a href="#" class="list-group-item list-group-item-action">Good News</a>
@@ -33,8 +53,9 @@
                     <a href="#" class="list-group-item list-group-item-action">Weekend</a>
                 </div>
             </div>
-            <div class="col-md-9">
-                <!-- Carousel with song lyrics -->
+            
+            <div class="col-lg-9">
+                <!-- Carousel -->
                 <div id="lyricsCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -48,19 +69,42 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Biografia -->
                 <div class="row mt-4">
-                    <!-- Biography Text -->
-                    <div class="col-md-4">
+                    <!-- Sección Inicio -->
+                    <div class="col-lg-4">
                         <h5>Inicio</h5>
-                        <p>Mac Miller, nacido Malcolm McCormick, comenzó su carrera musical en Pittsburgh. Lanzó su primer álbum de estudio, *Blue Slide Park*, en 2011.</p>
+                        <p>Uno de los talentos emergentes más importantes que ha dejado la música hip hop, R&B y chill, durante la última década: Malcolm James McCormick, mejor conocido como Mac Miller.   
+                            Miller nació en la ciudad de Pittsburgh, el 19 de enero de 1992. Durante su infancia llegó a adoptar un gusto personal por el mundo de la música, así como también un aprendizaje en instrumentos como la guitarra, el bajo, el piano y la batería. Por otro lado, Miller también era alabado por su forma de ser tan relajada y despreocupada, un detalle que le llegó a dar el apodo de Easy Mac en la escuela, su primer nombre artístico. 
+                        </p>
                     </div>
-                    <div class="col-md-4">
-                        <h5>Estilo Musical</h5>
-                        <p>Con influencias de hip-hop, jazz y neo-soul, Mac creó un estilo único que resonó con millones de fanáticos alrededor del mundo.</p>
+                    
+                    <!-- Sección Discografía -->
+                    <div class="col-lg-4">
+                        <h5>Discografía</h5>
+                        <ol>
+                            <li>Blue Slide Park (2011)</li>
+                            <li>Watching Movies with the Sound Off(2013)</li>
+                            <li>GO:OD AM (2015)</li>
+                            <li>The Divine Feminine (2016)</li>
+                            <li>Swimming (2018)</li>
+                            <li>Circles (2020, póstumo)</li>
+                        </ol>
+                        <h5>Mixtapes</h5>
+                        <ol>
+                            <li>K.I.D.S (2010)</li>
+                            <li>Best Day Ever (2011)</li>
+                            <li>Macadelic (2012)</li>
+                            <li>Delusional Thomas (2013)</li>
+                            <li>Faces (2014)</li>
+                        </ol>
                     </div>
-                    <div class="col-md-4">
+                    
+                    <!-- Sección Legado -->
+                    <div class="col-lg-4">
                         <h5>Legado</h5>
-                        <p>A pesar de su fallecimiento en 2018, su música y su mensaje han seguido influyendo en nuevas generaciones de oyentes.</p>
+                        <p>A pesar de su fallecimiento en 2018, su música y su mensaje han seguido influyendo en nuevas generaciones de oyentes. Mac Miller es recordado por ser uno de los rappers con mayor crecimiento de esta última década, un artista que atravesó muchas dificultades, las cuales le dieron una clara inspiración y profundo significado a su respectiva discografía. Miller logró tocar las vidas de millones de fanáticos y oyentes, los cuales encontraron un respiro y apoyo en sus canciones. Por esa razón lo recordamos con este pequeño repaso de su historia, mandandole mucho amor donde quiera que esté.</p>
                     </div>
                 </div>
             </div>

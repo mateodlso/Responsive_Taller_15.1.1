@@ -1,0 +1,13 @@
+ /* Personaliza estilos para tamaño LG */
+ .container-lg {
+    max-width: 1140px;
+}
+/* Asegurar que el contenido del carrusel esté centrado */
+#lyricsCarousel .carousel-inner p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.biography-text {
+    font-size: 1.1rem;
+}
