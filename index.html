@@ -19,7 +19,7 @@
             <!-- Menú colapsable -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Discografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Biografía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Frases</a></li>
                     
@@ -70,54 +70,70 @@
                     </div>
                 </div>
 
-                <!-- Biografia -->
-                <div class="row mt-4">
-                    <!-- Sección Inicio -->
-                    <div class="col-lg-4">
-                        <h5>Inicio</h5>
-                        <p>Uno de los talentos emergentes más importantes que ha dejado la música hip hop, R&B y chill, durante la última década: Malcolm James McCormick, mejor conocido como Mac Miller.   
-                            Miller nació en la ciudad de Pittsburgh, el 19 de enero de 1992. Durante su infancia llegó a adoptar un gusto personal por el mundo de la música, así como también un aprendizaje en instrumentos como la guitarra, el bajo, el piano y la batería. Por otro lado, Miller también era alabado por su forma de ser tan relajada y despreocupada, un detalle que le llegó a dar el apodo de Easy Mac en la escuela, su primer nombre artístico. 
-                        </p>
-                    </div>
+                <Biografía -->
+                    <div class="row mt-4">
+                        <!-- Sección Inicio - Columna 1 -->
+                        <div class="col-lg-4">
+                            <h5>Inicios</h5>
+                            <p>Uno de los talentos emergentes más importantes que ha dejado la música hip hop, R&B y chill, durante la última década: Malcolm James McCormick, mejor conocido como Mac Miller.   
+                            Miller nació en la ciudad de Pittsburgh, el 19 de enero de 1992. Durante su infancia llegó a adoptar un gusto personal por el mundo de la música, así como también un aprendizaje en instrumentos como la guitarra, el bajo, el piano y la batería.
+                            Por otro lado, Miller también era alabado por su forma de ser tan relajada y despreocupada, un detalle que le llegó a dar el apodo de Easy Mac en la escuela, su primer nombre artístico.</p>
+                        </div>
                     
-                    <!-- Sección Discografía -->
-                    <div class="col-lg-4">
-                        <h5>Discografía</h5>
-                        <ol>
-                            <li>Blue Slide Park (2011)</li>
-                            <li>Watching Movies with the Sound Off(2013)</li>
-                            <li>GO:OD AM (2015)</li>
-                            <li>The Divine Feminine (2016)</li>
-                            <li>Swimming (2018)</li>
-                            <li>Circles (2020, póstumo)</li>
-                        </ol>
-                        <h5>Mixtapes</h5>
-                        <ol>
-                            <li>K.I.D.S (2010)</li>
-                            <li>Best Day Ever (2011)</li>
-                            <li>Macadelic (2012)</li>
-                            <li>Delusional Thomas (2013)</li>
-                            <li>Faces (2014)</li>
-                        </ol>
-                    </div>
-                    
-                    <!-- Sección Legado -->
-                    <div class="col-lg-4">
-                        <h5>Legado</h5>
-                        <p>A pesar de su fallecimiento en 2018, su música y su mensaje han seguido influyendo en nuevas generaciones de oyentes. Mac Miller es recordado por ser uno de los rappers con mayor crecimiento de esta última década, un artista que atravesó muchas dificultades, las cuales le dieron una clara inspiración y profundo significado a su respectiva discografía. Miller logró tocar las vidas de millones de fanáticos y oyentes, los cuales encontraron un respiro y apoyo en sus canciones. Por esa razón lo recordamos con este pequeño repaso de su historia, mandandole mucho amor donde quiera que esté.</p>
+                        <!-- Sección Vida - Columna 2 -->
+                        <div class="col-lg-4">
+                            <h5>Vida</h5>
+                            <p>Durante su adolescencia dio sus primeros pasos en el mundo de los versos y el freestyle. Con tan solo 15 años, lanzó su primer mixtape titulado <strong>Mackin’ Ain’t Easy</strong>. Gracias al auge de Internet y plataformas como MySpace, Mac decidió seguir adelante con sus sueños de convertirse en un artista.
+                            Uno de sus mayores logros tempranos fue el lanzamiento del sencillo "Donald Trump" en 2011, que se convirtió en un fenómeno viral y catapultó su carrera a nuevas alturas. Mac no solo conquistó a sus fans, sino que también fundó su propio sello discográfico, REMember Music, en 2013.
+                            La culminación de su esfuerzo y dedicación se vio reflejada en su nominación al Grammy por su álbum <strong>Swimming</strong> en 2018.</p>
+                        </div>
+                        
+                        <!-- Sección Legado - Columna 3 -->
+                        <div class="col-lg-4">
+                            <h5>Legado</h5>
+                            <p>A pesar de su fallecimiento en 2018, su música y su mensaje han seguido influyendo en nuevas generaciones de oyentes. Mac Miller es recordado por ser uno de los rappers con mayor crecimiento de esta última década, un artista que atravesó muchas dificultades, las cuales le dieron una clara inspiración y profundo significado a su respectiva discografía. Miller logró tocar las vidas de millones de fanáticos y oyentes, los cuales encontraron un respiro y apoyo en sus canciones. Por esa razón lo recordamos con este pequeño repaso de su historia, mandandole mucho amor donde quiera que esté.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    
+
+    <!-- Contenedor dinámico para el contenido específico de cada página -->
+    <div class="container-lg mt-4" id="contenido-pagina">
+        <!-- Aquí se insertará el contenido específico de cada página -->
     </div>
+
+    <!-- Footer común para todas las páginas -->
+    <footer class="mt-4 text-center">
+        <p>&copy; 2024 Mac Miller Tribute. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Bootstrap JS, jQuery y Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para cargar contenido dinámico -->
     <script>
-        $('#lyricsCarousel').carousel({
-            interval: 2000
+        // Cargar el contenido dinámico según la página
+        $(document).ready(function() {
+            let pagina = window.location.pathname.split("/").pop();
+
+            // Cargar contenido específico según el nombre del archivo
+            switch(pagina) {
+                case 'discografia.html':
+                    $("#contenido-pagina").load("contenido/discografia-content.html");
+                    break;
+                case 'biografia.html':
+                    $("#contenido-pagina").load("contenido/biografia-content.html");
+                    break;
+                case 'frases.html':
+                    $("#contenido-pagina").load("contenido/frases-content.html");
+                    break;
+                default:
+                    $("#contenido-pagina").load("contenido/inicio-content.html");
+            }
         });
     </script>
 </body>
