@@ -11,7 +11,7 @@
     <div class="container-lg mt-4">
         <!-- Navbar con menú hamburguesa -->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="#">Mac Miller</a>
+            <a class="navbar-brand" href="index.html">Mac Miller</a>
             <!-- Botón hamburguesa -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,8 +20,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Biografía</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Frases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="frases.html">Frases</a></li>
                     
                     <!-- Dropdown para canciones en pantallas MD o menores -->
                     <li class="nav-item dropdown d-md-block d-lg-none">
@@ -38,7 +38,7 @@
                 </ul>
                 <!-- Input de búsqueda, solo visible en pantallas LG o mayores -->
                 <form class="form-inline d-none d-lg-block">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Buscar">
                 </form>
             </div>
         </nav>
@@ -114,27 +114,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Script para cargar contenido dinámico -->
-    <script>
-        // Cargar el contenido dinámico según la página
-        $(document).ready(function() {
-            let pagina = window.location.pathname.split("/").pop();
+    <script src="main.js"></script>
 
-            // Cargar contenido específico según el nombre del archivo
-            switch(pagina) {
-                case 'discografia.html':
-                    $("#contenido-pagina").load("contenido/discografia-content.html");
-                    break;
-                case 'biografia.html':
-                    $("#contenido-pagina").load("contenido/biografia-content.html");
-                    break;
-                case 'frases.html':
-                    $("#contenido-pagina").load("contenido/frases-content.html");
-                    break;
-                default:
-                    $("#contenido-pagina").load("contenido/inicio-content.html");
-            }
-        });
-    </script>
 </body>
 </html>

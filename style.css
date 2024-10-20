@@ -1,7 +1,11 @@
  /* Personaliza estilos para tamaño LG */
  .container-lg {
     max-width: 1140px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados para mejor apariencia */
 }
+
 /* Asegurar que el contenido del carrusel esté centrado */
 #lyricsCarousel .carousel-inner p {
     text-align: center;
@@ -11,3 +15,4 @@
 .biography-text {
     font-size: 1.1rem;
 }
+
